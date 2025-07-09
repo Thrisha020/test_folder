@@ -1,0 +1,11 @@
+name: Manual Workflow Trigger
+
+on:
+  workflow_dispatch:  # 👈 Enables the manual "Run workflow" button
+
+jobs:
+  say_hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "👋 Hello from a manually triggered workflow!"
